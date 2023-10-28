@@ -39,3 +39,102 @@ img {
 .main-content {
   flex-grow: 1;
 }
+
+
+/* SITE-HEADER */
+.header {
+  padding-top: 2.125rem;
+  padding-bottom: 5.850625rem;
+  background-image: url(../img/header-bg.png);
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.header__container {}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 7rem;
+}
+
+.header__logo {
+  display: flex;
+  text-decoration: none;
+}
+
+.header__middle {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.header__inner {
+  width: 100%;
+  max-width: 31.8rem;
+  margin-right: 0.8rem;
+}
+
+.header__heading {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #1f3f68;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 115.625%;
+  letter-spacing: 0.16rem;
+}
+
+.header__text {
+  width: 100%;
+  max-width: 26.5625rem;
+  margin-top: 0;
+  margin-bottom: 4.4375rem;
+  color: var(--Blue_01, #1F3F68);
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  /* 162.5% */
+  letter-spacing: 0.05rem;
+}
+
+.header__button {
+  display: inline-block;
+  padding: 0.9375rem 3.125rem;
+  border-radius: 10px;
+  box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.20);
+  background-color: #5A98D0;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  /* 162.5% */
+  letter-spacing: 0.04rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__img {
+  flex-shrink: 0;
+}
+
+
+/* RETINA BG */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../img/header-bg@2x.png);
+  }
+
+}
